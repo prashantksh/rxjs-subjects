@@ -26,7 +26,7 @@ export class Topic4Component implements OnInit {
     rSubject.next('B');
     rSubject.next('C');
 
-    //  Second subscription. This gets C.
+    //  Second subscription. This gets A, B, C.
     stream$.subscribe(val => {
       console.log('Second Subscriber', val);
     });
